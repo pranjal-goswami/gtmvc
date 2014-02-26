@@ -1,0 +1,31 @@
+
+define('ERROR_CODE','error');
+define('SUCCESS_CODE','success');
+define('INFO_CODE','info');
+
+/* Database Connection Credentials */
+if(SERVER=='localhost'){
+$path = dirname(__FILE__).'/';
+	if(file_exists($path.'../../pranjal'))
+	{
+		define('DB_SERVER','localhost');
+		define('DB_USER','root');
+		define('DB_PWD','regiate');
+		define('DB_NAME','');
+	}
+	else if(file_exists($path.'../../naman'))
+	{	
+		define('DB_SERVER','localhost');
+		define('DB_USER','root');
+		define('DB_PWD','spades');
+		define('DB_NAME','');
+	}
+	else
+	{ 	//default values
+		define('DB_SERVER','localhost');
+		define('DB_USER','root');
+		define('DB_PWD','');
+		define('DB_NAME','');
+	}}
+
+?>

@@ -1,0 +1,21 @@
+<?
+/**
+ * © 2013-2015 GreekTurtle
+ *
+ * LICENSE:
+ *
+ * This file is part of #project_name# (http://#project_url#).
+ *
+ * The contents of this file cannot be copied, distributed or modified without prior
+ * consent of the author. 
+ *
+ * Project : #project_name#
+ * File :  #file_name#
+ * Description : #file_description#
+ *
+ * @author Pranjal Goswami <pranjal[at]weblength[dot]co[dot]in> 
+ * 
+ * BADesigns | GreekTurtle | Weblength Infonet Pvt. Ltd. 
+ *
+ * Created : #full_time#
+ */

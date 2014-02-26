@@ -1,0 +1,25 @@
+
+class Session{
+	
+	public static function isLoggedIn()
+	{
+		/*return true iff session is active*/
+		if(isset($_SESSION[S_STATUS]) && $_SESSION[S_STATUS]==S_STATUS_ACTIVE) return true;
+		else return false;
+	}
+	
+	public static function isAdmin()
+	{
+		/*return true iff session owner is admin */
+		if(isset($_SESSION[S_ADMIN])) return true;
+		else return false;
+	}
+	
+	public static function getLoggedInUser()
+	{
+		if(!self::isLoggedIn()) return null;
+		return SessionCache::get(S_OWNER);
+	}
+	
+}
+?>
